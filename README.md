@@ -7,7 +7,10 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-# Provide <Outlet /> when using react children routing
+# Provide <Outlet /> when using react children routing eg. navigation links as belw
+
+`http://localhost:5173/about/angular`
+`http://localhost:5173/about/vue/10001`
 
 ```jsx
 {
