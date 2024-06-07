@@ -106,8 +106,13 @@ p {
 
 footer {
   position: absolute;
-  bottom: 0;
+  bottom: 0 vh; /* fix the overlap issue when content size big */
   /* fix width  issue*/
   width: 100%;
   padding: 2rem 0;
+}
+
+/* customize existing style  */
+.p-tag {
+  padding: 0.6rem 1.5rem !important;
 }

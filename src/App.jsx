@@ -2,16 +2,16 @@ import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 
 import { useState } from 'react';
+import Profile from './components/Profile';
 
 function App() {
   const [value, setValue] = useState('');
   return (
     <>
       <main>
-        <div className='text-center text-teal-600'>
-          <h1>Hello world App</h1>
-          <h1>Vite + React</h1>
-        </div>
+        <section id='profile'>
+          <Profile />
+        </section>
       </main>
       <footer>
         <div className='surface-section px-4 py-6 md:px-6 lg:px-8 text-center'>
