@@ -5,7 +5,7 @@ export default function Profile() {
     <div className='px-2 py-2 md:px-2 lg:px-2'>
       <div className='surface-card p-4 shadow-2 border-round'>
         <div className='font-medium text-8xl text-900 mb-3'>SAROJ PADHAN</div>
-        <div className='text-4xl text-500 mb-5'>
+        <div className='text-4xl text-900 mb-5'>
           Software Engineer at Cognizant Technology Solutions India Pvt. Ltd.
         </div>
         <div className='text-3xl text-700 mb-5 text-justify'>
