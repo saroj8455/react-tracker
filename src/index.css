@@ -36,17 +36,21 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  margin: 0;
 }
 html {
   color-scheme: var(--color-scheme);
   scroll-behavior: smooth;
 }
 body {
-  min-height: 100vh;
   font-family: var(--font-family);
   font-size: var(--fs-300);
   line-height: 1.5;
   text-rendering: optimizeSpeed;
+}
+
+#root {
+  min-height: 100vh;
 }
 
 h1,
@@ -62,14 +66,10 @@ ul {
 
 /* A elements that don't have a class get default styles */
 a {
-  color: green;
+  font-weight: var(--fs-500);
   text-decoration: none;
 }
-/* a:hover,
-a:focus {
-  color: #555 !important;
-} */
-/* Make images easier to work with */
+
 img,
 picture {
   max-width: 100%;

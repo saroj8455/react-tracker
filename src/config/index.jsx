@@ -1,3 +1,5 @@
 import { Button } from 'primereact/button';
 
-export { Button };
+import { Card } from 'primereact/card';
+import { ProgressSpinner } from 'primereact/progressspinner';
+export { Button, Card, ProgressSpinner };
