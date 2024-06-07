@@ -29,3 +29,9 @@ Currently, two official plugins are available:
     ],
   },
 ```
+
+```jsx
+<div className='m-0'>
+  <Outlet />
+</div>
+```
