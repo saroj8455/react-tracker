@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { lazy, Suspense } from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App.jsx';
 import './index.css';
@@ -14,6 +14,10 @@ import About from './pages/About.jsx';
 import AngularTech from './pages/AngularTech.jsx';
 import ReactTech from './pages/ReactTech.jsx';
 import Vue from './pages/Vue.jsx';
+import Home from './pages/Home.jsx';
+import { ProgressSpinner } from 'primereact/progressspinner';
+
+const HOME = lazy(() => import('./pages/Home.jsx'));
 
 // Create router path
 
@@ -23,6 +27,21 @@ const router = createBrowserRouter([
     errorElement: <ErrorPage />,
     // element: <Landing />,
     element: <App />,
+  },
+  {
+    path: '/home',
+    element: (
+      <Suspense
+        fallback={
+          <div className='text-5xl text-yellow-500'>
+            Loading App...... <ProgressSpinner />
+          </div>
+        }
+      >
+        <HOME />
+      </Suspense>
+    ),
+    errorElement: <ErrorPage />,
   },
   {
     path: '/about',
@@ -47,6 +66,11 @@ const router = createBrowserRouter([
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     {/* <App /> */}
+
     <RouterProvider router={router} />
   </React.StrictMode>
 );
+
+// ReactDOM.createRoot(document.getElementById('root')).render(
+//   <RouterProvider router={router} />
+// );

@@ -16,9 +16,9 @@ export default function Profile() {
           Tailwindcss.
         </div>
         <Divider className='pb-2' />
-        <div className='text-2xl mt-4  text-900 mb-5 flex gap-2 align-items-center justify-content-between'>
+        <div className='text-2xl mt-4  text-900 mb-5 flex gap-2 align-items-center justify-content-around'>
           <div className='card flex align-items-center gap-1'>
-            <i className='pi pi-mobile'></i> 8093746916
+            <i className='pi pi-mobile'></i> +91 8093746916
           </div>
           <div className='card flex align-items-center gap-1'>
             <i className='pi pi-inbox mt-1'></i> saroj.padhan11@gmail.com
@@ -58,6 +58,14 @@ export default function Profile() {
               team-oriented and self-directed environments, with a proven track
               record of delivering high-quality software solutions on time and
               within budget.
+            </div>
+          </li>
+          <li className='flex align-items-center py-3 px-2 flex-wrap surface-ground'>
+            <div className='text-900 font-semibold w-full md:w-2 font-medium'>
+              Education
+            </div>
+            <div className='text-900 font-semibold w-full md:w-10'>
+              Bachelor in Computer Application from Sambalpur University, Odisha
             </div>
           </li>
           <li className='flex align-items-center py-3 px-2 flex-wrap surface-ground'>
@@ -154,18 +162,29 @@ export default function Profile() {
           {/* projects  */}
           <li className='flex align-items-center py-3 px-2 flex-wrap surface-ground'>
             <div className='text-900 font-semibold w-full md:w-2 font-medium'>
-              Projects
+              Project Work
             </div>
             <div className='text-900 w-full md:w-10'>
               <div className='grid mt-0 mr-0'>
                 <div className='col-12 md:col-6'>
                   <div className='p-3 border-1 surface-border border-round surface-card'>
                     <div className='text-900 mb-2'>
-                      <i className='pi pi-github mr-2' />
-                      <span className='font-medium'>PrimeFaces</span>
+                      <span className='font-medium'>
+                        Network Validation Tool for VxRail
+                      </span>
                     </div>
-                    <div className='text-700'>
-                      Ultimate UI Component Suite for JavaServer Faces
+                    <div className='text-justify'>
+                      <div className='text-700'>
+                        Dell EMC VxRail Appliance are HCI (hypercoverged
+                        Infrastructure solution that consolidates compute,
+                        storage and network into single, highly available,
+                        unified system. With careful planning.
+                      </div>
+                      <div className='text-700'>
+                        VxRail Appliances can be rapidly deployed into an
+                        existing data center environment and the end- product is
+                        immediately available to deploy application and service.
+                      </div>
                     </div>
                   </div>
                 </div>
