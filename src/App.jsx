@@ -9,6 +9,11 @@ import Project from './components/Project';
 import VXRail from './components/VXRail';
 import Transport from './components/Transport';
 import IonoxCart from './components/IonoxCart';
+import Flexdemo from './components/Flexdemo';
+import SinglePrinciple from './components/SinglePrinciple';
+import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+
+const queryClient = new QueryClient();
 
 function App() {
   const [value, setValue] = useState('');
@@ -30,7 +35,7 @@ function App() {
   }, []);
 
   return (
-    <>
+    <QueryClientProvider client={queryClient}>
       <main>
         <section>
           <div className='container'>
@@ -58,6 +63,8 @@ function App() {
         <section id='profile'>
           {/* <Project project={projectInfo} /> */}
           {/* <ProjectWork /> */}
+          <SinglePrinciple />
+          <Flexdemo />
           <Profile />
           <Transport />
           <IonoxCart />
@@ -94,7 +101,7 @@ function App() {
           </div>
         </div>
       </footer>
-    </>
+    </QueryClientProvider>
   );
 }
 
