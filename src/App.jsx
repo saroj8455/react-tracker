@@ -10,8 +10,11 @@ import VXRail from './components/VXRail';
 import Transport from './components/Transport';
 import IonoxCart from './components/IonoxCart';
 import Flexdemo from './components/Flexdemo';
+import Library from './components/Library';
 import SinglePrinciple from './components/SinglePrinciple';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
+import CallbackSetup from './components/CallbackSetup';
+import ParentSetup from './components/ParentSetup';
 
 const queryClient = new QueryClient();
 
@@ -37,6 +40,18 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <main>
+        <section className='py-5'>
+          <div className='container'>
+            {/* <Library /> */}
+            <ParentSetup />
+          </div>
+        </section>
+        <section className='py-5'>
+          <div className='container'>
+            {/* <Library /> */}
+            <CallbackSetup />
+          </div>
+        </section>
         <section>
           <div className='container'>
             <h1 className='text-center pb-2'>ref example and useRef hooks</h1>
@@ -63,6 +78,7 @@ function App() {
         <section id='profile'>
           {/* <Project project={projectInfo} /> */}
           {/* <ProjectWork /> */}
+
           <SinglePrinciple />
           <Flexdemo />
           <Profile />

@@ -5,7 +5,7 @@ export default function IonoxCart() {
     <div className='surface-section px-2 py-4 md:px-2 lg:px-2'>
       <div className='surface-section'>
         <div className='font-medium text-3xl text-900 mb-3'>#02 Ionox Cart</div>
-        <div className='text-2xl text-500 mb-5'>Dell EMC</div>
+        <div className='text-2xl text-500 mb-5'>Ionox Software Pvt. Ltd.</div>
         <div className='text-900 font-medium mb-5'>
           This project deals with developing an e-commerce website for online
           product sale. It provides the user with a catalog of different product
