@@ -3,7 +3,7 @@ import { Card } from 'primereact/card';
 import React, { memo, useCallback, useEffect, useState } from 'react';
 
 export default function CallbackSetup() {
-  console.log('todo rendered');
+  // console.log('todo rendered');
   const [todos, setTodo] = useState(['buy cofee']);
   const [post, setPost] = useState({});
 
@@ -15,7 +15,7 @@ export default function CallbackSetup() {
   const getPost = async () => {
     const resp = await fetch('https://jsonplaceholder.typicode.com/posts/1');
     const data = await resp.json();
-    console.log(data);
+    // console.log(data);
     setPost(data);
   };
 
@@ -41,7 +41,7 @@ export default function CallbackSetup() {
 }
 
 const Counter = memo(() => {
-  console.log('counter rendered');
+  // console.log('counter rendered');
   const [counter, setCounter] = useState(0);
   return (
     <div className='pt-4'>

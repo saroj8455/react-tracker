@@ -16,6 +16,8 @@ import ReactTech from './pages/ReactTech.jsx';
 import Vue from './pages/Vue.jsx';
 import Home from './pages/Home.jsx';
 import { ProgressSpinner } from 'primereact/progressspinner';
+import { Provider } from 'react-redux';
+import store from './redux/store.jsx';
 
 const HOME = lazy(() => import('./pages/Home.jsx'));
 
@@ -64,11 +66,12 @@ const router = createBrowserRouter([
 ]);
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-  <React.StrictMode>
+  <React.Fragment>
     {/* <App /> */}
-
-    <RouterProvider router={router} />
-  </React.StrictMode>
+    <Provider store={store}>
+      <RouterProvider router={router} />
+    </Provider>
+  </React.Fragment>
 );
 
 // ReactDOM.createRoot(document.getElementById('root')).render(

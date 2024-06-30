@@ -1,7 +1,7 @@
 import { Button } from 'primereact/button';
 import { InputText } from 'primereact/inputtext';
 
-import { useEffect, useRef, useState } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import Profile from './components/Profile';
 import TopBanner from './components/TopBanner';
 import ProjectWork from './components/ProjectWork';
@@ -15,8 +15,24 @@ import SinglePrinciple from './components/SinglePrinciple';
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import CallbackSetup from './components/CallbackSetup';
 import ParentSetup from './components/ParentSetup';
+import MemoSetup from './components/MemoSetup';
+import { ProgressSpinner } from 'primereact/progressspinner';
+// import LazyCard from './components/LazyCard';
+import ErrorBoundary from './components/ErrorBoundry';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { decrement, increment } from './redux/counter';
+import { Card } from 'primereact/card';
 
 const queryClient = new QueryClient();
+
+const LazyCard = React.lazy(() => import('./components/LazyCard'));
+
+// create a custom error component
+const CustomErrorComponent = () => {
+  // This component will throw an error to demonstrate the error boundary
+  throw new Error('An error occurred in SomeComponent!');
+};
 
 function App() {
   const [value, setValue] = useState('');
@@ -28,21 +44,49 @@ function App() {
     tech: ['Angular', 'Reactjs', 'Nodejs'],
   };
 
+  // redux counter setup
+  const count = useSelector((state) => state.counter.value);
+  const dispatch = useDispatch();
+
   // hooks / life cycle method
   useEffect(() => {
-    usernameField.current.focus();
+    console.log('received from counter', count);
+    // usernameField.current.focus();
     // clean up function
     return () => {
       usernameField.current.value = '';
     };
-  }, []);
+  }, [count]);
 
   return (
     <QueryClientProvider client={queryClient}>
       <main>
+        <section className='py-5' id='lazy__card'>
+          <div className='container'>
+            {/* lazy component */}
+            <ErrorBoundary>
+              <Suspense fallback={<ProgressSpinner />}>
+                <LazyCard />
+                {/* <CustomErrorComponent /> */}
+              </Suspense>
+            </ErrorBoundary>
+          </div>
+        </section>
+        {/* redux  */}
+        <div className='flex gap-1 justify-content-center'>
+          <Button label='Increment' onClick={() => dispatch(increment())} />
+          <Card title={count} />
+
+          <Button label='Decrement' onClick={() => dispatch(decrement())} />
+        </div>
+        {/* redux  */}
         <section className='py-5'>
           <div className='container'>
-            {/* <Library /> */}
+            <MemoSetup />
+          </div>
+        </section>
+        <section className='py-5'>
+          <div className='container'>
             <ParentSetup />
           </div>
         </section>

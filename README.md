@@ -133,7 +133,7 @@ https://www.freecodecamp.org/news/learn-flexbox-build-5-layouts/
 
 ## To enable the hot reload, you need to put this configuration in your vite.config.ts
 
-```js
+````js
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -142,12 +142,23 @@ export default defineConfig({
     },
   },
 });
-```
+```html
+  <Card className='mb-2' key={p.id}>
+    <h2 className='pb-2 text-indigo-400'>{p.title}</h2>
+    <p className='m-0'>
+      Price: ${p.price} | Category: {p.category}
+    </p>
+    <p className='pt-2 text-indigo-200'>{p.description}</p>
+  </Card>
+````
 
-            <Card className='mb-2' key={p.id}>
-              <h2 className='pb-2 text-indigo-400'>{p.title}</h2>
-              <p className='m-0'>
-                Price: ${p.price} | Category: {p.category}
-              </p>
-              <p className='pt-2 text-indigo-200'>{p.description}</p>
-            </Card>
+Responsibilities include development, styling and deployment of React based web pages on a full stack NodeJS based REST & GraphQL based backend
+Enthusiasm for everything JavaScript
+Knowledge of the NPM ecosystem
+4 year track record in React/node JS or both
+CSS skills
+love of thoroughly tested code with a tool like Jest, mocha, ava, tap, Jasmine
+Ability to configure a project with Webpack and babel
+working experience with eslint, prettier and quality tools for the JS ecosystem
+Hands on use of Rest, GraphQL, ExpressJS
+Understanding of recent JS developments, expecially with respect to the React ecosystem
