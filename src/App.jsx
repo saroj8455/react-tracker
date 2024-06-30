@@ -50,7 +50,7 @@ function App() {
 
   // hooks / life cycle method
   useEffect(() => {
-    console.log('received from counter', count);
+    console.log('received from counter store', count);
     // usernameField.current.focus();
     // clean up function
     return () => {
@@ -73,12 +73,34 @@ function App() {
           </div>
         </section>
         {/* redux  */}
-        <div className='flex gap-1 justify-content-center'>
-          <Button label='Increment' onClick={() => dispatch(increment())} />
-          <Card title={count} />
+        <h2 className='text-center'>Redux Counter</h2>
+        <div className='container'>
+          <div className='flex gap-4 flex-column justify-content-center'>
+            <Button label='Increment' onClick={() => dispatch(increment())} />
+            <Card title={count}>
+              <p className='mb-4'>
+                React Redux is the official React UI bindings layer for Redux.
+                It lets your React components read data from a Redux store, and
+                dispatch actions to the store to update state.
+              </p>
+              <div className='m-0'>
+                The Redux Toolkit package is intended to be the standard way to
+                write Redux logic. It was originally created to help address
+                three common concerns about Redux:
+                <ul>
+                  <li>"Configuring a Redux store is too complicated"</li>
+                  <li>
+                    "I have to add a lot of packages to get Redux to do anything
+                    useful" "Redux requires too much boilerplate code"
+                  </li>
+                </ul>
+              </div>
+            </Card>
 
-          <Button label='Decrement' onClick={() => dispatch(decrement())} />
+            <Button label='Decrement' onClick={() => dispatch(decrement())} />
+          </div>
         </div>
+
         {/* redux  */}
         <section className='py-5'>
           <div className='container'>
