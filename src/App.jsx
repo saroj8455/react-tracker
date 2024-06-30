@@ -75,8 +75,10 @@ function App() {
         {/* redux  */}
         <h2 className='text-center'>Redux Counter</h2>
         <div className='container'>
-          <div className='flex gap-4 flex-column justify-content-center'>
-            <Button label='Increment' onClick={() => dispatch(increment())} />
+          <div className='flex gap-4  align-items-center'>
+            <div>
+              <Button label='Increment' onClick={() => dispatch(increment())} />
+            </div>
             <Card title={count}>
               <p className='mb-4'>
                 React Redux is the official React UI bindings layer for Redux.
@@ -96,8 +98,9 @@ function App() {
                 </ul>
               </div>
             </Card>
-
-            <Button label='Decrement' onClick={() => dispatch(decrement())} />
+            <div>
+              <Button label='Decrement' onClick={() => dispatch(decrement())} />
+            </div>
           </div>
         </div>
 
