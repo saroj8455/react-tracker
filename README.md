@@ -64,67 +64,9 @@ export default function Vue() {
 
 ## Code Spliting
 
-`https://dev.to/franklin030601/code-splitting-in-react-js-4o2g`
+`https://dev.to/franklin030601/code-splitting-in-react-js-4o2g` <br>
 
-Professional Experience:
-
-Full Stack Developer | [Company Name]
-City, State | [Dates of Employment]
-
-Led the development of [key projects], resulting in a [specific outcome, e.g., "30% increase in user engagement"].
-Utilized React and Redux to create dynamic and responsive user interfaces.
-Developed RESTful APIs with Node.js and Express, integrating third-party services and ensuring secure data transactions.
-Implemented database solutions using PostgreSQL, ensuring high availability and performance.
-Collaborated with cross-functional teams to define project requirements and deliver solutions aligned with business goals.
-Conducted code reviews and mentored junior developers, fostering a collaborative and knowledge-sharing environment.
-Utilized Docker and Kubernetes for containerization and orchestration of applications, ensuring consistent deployment environments.
-Web Developer | [Previous Company Name]
-City, State | [Dates of Employment]
-
-Designed and developed interactive web applications using HTML, CSS, JavaScript, and frameworks like Angular and Vue.js.
-Built and maintained server-side logic with Python and Django, focusing on performance optimization and scalability.
-Developed and consumed RESTful APIs and GraphQL endpoints for seamless data exchange.
-Integrated CI/CD pipelines using Jenkins and GitLab CI, automating build, test, and deployment processes.
-Collaborated closely with UX/UI designers to ensure the technical feasibility of designs and enhance user experiences.
-Conducted unit testing and debugging to ensure high code quality and reliability.
-Junior Developer | [Company Name]
-City, State | [Dates of Employment]
-
-Assisted in the development of web applications using PHP and Laravel.
-Contributed to front-end development with jQuery and Bootstrap, improving the responsiveness and functionality of web pages.
-Participated in database design and management using MySQL.
-Assisted in the maintenance and updates of existing web applications, ensuring security and performance enhancements.
-Collaborated with team members to troubleshoot and resolve software issues.
-Education:
-
-Bachelor of Science in Computer Science | [University Name] | [Year of Graduation]
-[Any relevant certifications, e.g., "Certified Scrum Master (CSM)", "AWS Certified Solutions Architect"]
-Technical Skills:
-
-Front-End: HTML, CSS, JavaScript, React, Angular, Vue.js, Redux, Bootstrap
-Back-End: Node.js, Express, Python, Django, PHP, Laravel
-Databases: SQL, PostgreSQL, MySQL, MongoDB
-Tools & Platforms: Docker, Kubernetes, Jenkins, GitLab CI, AWS, Azure
-Other: RESTful APIs, GraphQL, CI/CD, Agile methodologies, TDD/BDD
-Projects:
-
-[Project Name]: Description of the project, technologies used, and the impact or outcome.
-[Project Name]: Description of the project, technologies used, and the impact or outcome.
-Professional Affiliations:
-
-Member of [relevant professional organizations, e.g., "Association for Computing Machinery (ACM)"]
-Active contributor to [relevant open source projects or communities]
-Languages:
-
-English (fluent)
-[Other languages, if applicable]
-
-```
-Excel and Advance Excel ,
-Pivot table,report,sumif,countif
-```
-
-https://www.freecodecamp.org/news/learn-flexbox-build-5-layouts/
+`https://www.freecodecamp.org/news/learn-flexbox-build-5-layouts/`
 
 ## Single Responsiblity Principle in React using useQuery
 
@@ -152,13 +94,14 @@ export default defineConfig({
   </Card>
 ````
 
-Responsibilities include development, styling and deployment of React based web pages on a full stack NodeJS based REST & GraphQL based backend
-Enthusiasm for everything JavaScript
-Knowledge of the NPM ecosystem
-4 year track record in React/node JS or both
-CSS skills
-love of thoroughly tested code with a tool like Jest, mocha, ava, tap, Jasmine
-Ability to configure a project with Webpack and babel
-working experience with eslint, prettier and quality tools for the JS ecosystem
-Hands on use of Rest, GraphQL, ExpressJS
-Understanding of recent JS developments, expecially with respect to the React ecosystem
+## Features/Concepts To Learn
+
+- [ ] Understanding the react flow and structure.
+- [ ] Why we need hooks and impportant hooks.
+- [ ] useEffect, useRef, useCallback and useMemo.
+- [ ] Understand on react-router with realtime projects.
+- [ ] Context API with local storage.
+- [ ] Redux and Redux toolkit go through.
+- [ ] CORS and debugging in React.
+- [ ] How to deploy react app in .
+- [ ] hello
