@@ -6,7 +6,7 @@ import 'primereact/resources/themes/lara-light-cyan/theme.css';
 import 'primereact/resources/primereact.min.css';
 import 'primeflex/primeflex.css';
 import 'primeicons/primeicons.css';
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+import { createBrowserRouter, json, RouterProvider } from 'react-router-dom';
 import ErrorPage from './pages/ErrorPage.jsx';
 import Landing from './pages/Landing.jsx';
 import About from './pages/About.jsx';
@@ -59,6 +59,17 @@ const router = createBrowserRouter([
       },
       {
         path: 'vue/:vueId',
+        errorElement: <ErrorPage />,
+        loader: async ({ params }) => {
+          const response = await fetch(
+            `https://jsonplaceholder.typicode.com/users/${params.vueId}`
+          );
+          if (!response.ok) {
+            return { status: false };
+          }
+          const data = await response.json();
+          return { ...data, status: true };
+        },
         element: <Vue />,
       },
     ],
