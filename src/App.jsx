@@ -23,6 +23,8 @@ import ErrorBoundary from './components/ErrorBoundry';
 import { useSelector, useDispatch } from 'react-redux';
 import { decrement, increment } from './redux/counter';
 import { Card } from 'primereact/card';
+import { Divider } from 'primereact/divider';
+import MainParent from './performance/MainParent';
 
 const queryClient = new QueryClient();
 
@@ -61,6 +63,16 @@ function App() {
   return (
     <QueryClientProvider client={queryClient}>
       <main>
+        <section>
+          <div className='container'>
+            <h1>
+              React Performance Optimization using memo,useCallback,useMemo
+            </h1>
+            <Divider className='pb-4' />
+            <MainParent />
+          </div>
+        </section>
+        <Divider className='pb-4' />
         <section className='py-5' id='lazy__card'>
           <div className='container'>
             {/* lazy component */}

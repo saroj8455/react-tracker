@@ -105,3 +105,5 @@ export default defineConfig({
 - [ ] CORS and debugging in React.
 - [ ] How to deploy react app in .
 - [ ] hello
+
+## Handling Observables with NgFor and the Async Pipe
