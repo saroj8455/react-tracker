@@ -107,3 +107,18 @@ export default defineConfig({
 - [ ] hello
 
 ## Handling Observables with NgFor and the Async Pipe
+
+## All 12 useState and useEffect mistakes by junior react devloper.
+
+- [x] hello
+- [x] States updates aren't immiedate
+- [x] conditional rendering
+- [x] Updating object states
+- [x] Object states instead of similar ones
+- [x] Information can be derived from states/props
+- [x] Primitives vs Non-Primitives
+- [x] Initalizing single object
+- [x] Typescript mistakes
+- [x] Not using custom hooks
+- [x] Steal closure
+- [x] Fetching in use Effect
