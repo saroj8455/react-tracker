@@ -47,7 +47,7 @@ export default function About() {
         </div>
       </div>
       <div className='col-12 md:col-9 lg:col-8'>
-        <div className='text-center p-3 border-round-sm  font-bold'>
+        <div className='p-3 border-round-sm  font-bold'>
           <Prime.Card title='About Pages'>
             <div className='m-0'>
               <Outlet />
